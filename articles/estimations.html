@@ -19,24 +19,47 @@
 				<p>#estimations #workshop #agile </p>
 			</div>
 			<div class="article-content">
-				<p>Nous avons tous déjà rencontrés des problèmes d'estimation, un manque d'intérêt de l'équipe sur ce sujet ou encore des estimations influencées.<br>
-				<p>J'ai rencontré ce "problème" dans ma nouvelle équipe, qui ne trouve pas vraiment d'intérêt dans l'estimation des taches et voit plus ça comme une perte de temps.</p>
-				<p>Il y a plusieurs indicateurs qui montrent que l'équipe à une mauvaise échelle d'estimation. Cette dernière ne veut pas dire que l'équipe ne fonctionne pas, ni prévisible mais ce n'est pas un indicateur qui est utilisable et challengable dans le but d'une amélioration.</p>
+				<p>A quel moment sait on que notre estimation n'est pas "bonne" ?</p>
+				<p>Il y'a plusieurs facteurs qui sont des leviers d'alerte : </p>
+				<ul>
+					<li>Vélocité proche de 1. (1 story point / dev / jour)</li>
+					<li>1 Ticket / personne pour le sprint => Découpage, car avec la nouvelle estimation ça va être trop gros</li>
+					<li>une capacité en dessous de 13 ? => A challenger</li>
+				</ul>
+				<p>Déjà on va remettre au claire le vocabulaire pour l’estimation.</p>
+				<p><span class="blue-color">Vélocité :</span> c'est le nombre de points que peut faire un dev/jours.</p>
+				<p><span class="blue-color">Capacité :</span> C'est la somme de tout les Users Story pris par TOUTE l'équipe sur le sprint</p>
+				<p>Pour avoir une estimation "précise", il faut qu'il y'ai une <span class="blue-color">granularité</span> pour pouvoir être <span class="blue-color">cohérente.</span> </p>
 				<br><br>
-				<p>Je vous propose donc un atelier que j'ai déjà fait dans mes anciennes équipes et qui à donner un sens à l'estimation même pour les plus réticents.</p>
+				<h2 class="blue-color">Pourquoi estimer ? </h2>
+				<p>Il faut que le but soit clair et partagé par toute l'équipe. La capacité de l'équipe est un indicateur qui <span class="blue-color">ne doit pas être comparé d'une équipe à une autre.</span> </p>
+				<p>La stabilité de la vélocité de l'équipe est signe de bonne santé de l'équipe : </p>
+				<ul>
+					<li>L'équipe connait son sujet et sait combien de temps il faut pour faire une tache</li>
+					<li>Il n'y a pas d'événement qui ralentisse l'équipe</li>
+				</ul>
+				<br>
+				<p>On laisse une ondulation de +/- 20% avant de creuser pour chercher l'origine de cette instabilité, elle peut être causée par : </p>
+				<ul>
+					<li>Un problème sur les environnements de recette / preprod</li>
+					<li>Un problème sur les temps de build / dépendance extérieure</li>
+					<li>Instabilités du produit en production </li>
+					<li>Sur-estimation des taches</li>
+				</ul>
 				<br><br>
-				<p>Cet atelier est simple à mettre en place et necessite peu de préparation. Il faut avoir un mur dans l'espace d travail de l'équipe car il va servir de support quotidien par la suite. Avant de débuter l'atelier, nous devons choisir un ticket de référence pour pouvoir s'en servir d'exemple. Ça doit être un ticket avec lequel l'équipe est à l'aise, a l'habitude de le traiter et n'a aucune dépendance.</p>
-				<p>On sait que ce ticket prend entre 1 jour et 2 jours de développement en fonction de l'expérience du développeur qui le fait. Ce ticket sera donc estimé à 8 Story Point.</p>
-				<p>Un Story point est un rapport entre la complexité et le temps, il suit la suite de Fibonachi :) . Une fois que la définition d'un point est claire pour l'équipe on va pouvoir commencer l'atelier</p>
 				<br><br>
-				<p>Pour commencer, placez l'échelle sur le mur (1, 2, 3, 5, 8, 13, 21) et placer notre ticket de référence: </p>
-				<br><br>
+				<h2>La fresque</h2>
 				<img style="width: 100%" src="./../images/echelle.PNG">
 				<br><br>
-				<p>Avec l'équipe, on place les autres tickets en fonction du premier, en ce demandant s'il est plus complexe que ? plus long que ? tout le monde peut le prendre ou il faut une expertise ?</p>
-				<p>Dans le cas où ça serait plus de 21, il faut que cette US soit recoupée obligatoirement car il ne faut pas s'engager sur une US qui prendra tout le sprint.</p>
-				<br><br>
-				<p>À la fin de l'atelier, je vous conseille de garder l'échelle sur le mur comme ça il reste une référence pour l'équipe.</p>
+				<p>On utilise un mur qui est visible par l'équipe. Il faut pas que l'us la plus grande soit supérieure à 30% de la capacité du sprint. (ex: Pour une sprint de 90 points il ne faut pas dépasser le 21, ...)</p>
+				<p>On met le chiffrage pour pouvoir placer les us, on commence par placer une qu'on connait et ou y'a pas de zone de flou. C'est notre <span class="blue-color">US ETALON</span>, que l'on gardera tout au long de l'année. Elle sera toujours présentée avant chaque session de chiffrage. Il faut que ca soit une tache dont l'équipe à l'habitude de faire ou en connait tout les secrets.</p>
+				<br>
+				<p>On peut se dire vulgairement que:</p>
+				<ul>
+					<li>1/2 jour - 2 jours c'est 5-8 points</li>
+				</ul>
+				<p>A partir de là lors de chaque estimation on se pose la question est-ce que c'est plus compliqué / long ou pareil? Tout le monde peut-il le faire ? Cette fresque n'est pas définitive.</p><br>
+				<p>Il faut donc pour que cela soit possible faire un découpage plus petits pour pouvoir avec des US plus petites. Il faut donc en amont lors de l'atelier tech par exemple faire un travail de découpage à partir des US du PO / PM.</p>
 			</div>
 		</div>
 	</div>

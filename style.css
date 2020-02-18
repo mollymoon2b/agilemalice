@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -32,11 +32,14 @@ body {
 	line-height: 1;
 	font-family: 'Fredoka One';
 }
-ol, ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
+}
+ul {
+	margin: 10px;
+}
+li {
+	line-height: 26px;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -81,7 +84,6 @@ header p {
 	border-style: solid;
 }
 
-
 .small-header-bleu {
 	border-color: #2D9BF0;
 }
@@ -92,24 +94,22 @@ header p {
 	padding: 50px 0;
 }
 
-.wrapper-article {
-	border: 2px solid #E6E6E6;
-}
-
 .wrapper-article a {
+	border: 2px solid #E6E6E6;
 	text-decoration: none;
 	color: black;
 	padding: 24px 12px;
 	display: block;
+	margin:0 0 10px 0;
 }
 
 .article-title h1 {
     text-align: center;
     font-size: 35px;
-    border-bottom: #2D9BF0;
+    padding-bottom: 40px;
     border-style: dashed;
     border-bottom-width: 4px;
-    padding-bottom: 40px;
+    border-bottom-color: #2D9BF0;
 }
 
 .article-title p {
@@ -124,4 +124,27 @@ header p {
 .article-content p {
     line-height: 26px;
     font-size: medium;
+}
+
+.article-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+table {
+	border: medium solid #2D9BF0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	border: thin solid #2D9BF0;
+	padding: 5px;
+}
+
+td {
+	border: thin solid #2D9BF0;
+	padding: 5px;
+	background-color: #ffffff;
 }
